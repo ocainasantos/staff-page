@@ -4,35 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>STAFF — Monitoramento Inteligente para sua Lavoura</title>
+  <title>STAFF — Agricultura Inteligente Começa com Dados Precisos</title>
+
 </head>
 <body>
+
+  <!-- SONDA 3D FLUTUANTE -->
+  <canvas id="probe-canvas"></canvas>
 
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <span class="logo">STAFF</span>
-      <a href="#contato" class="btn btn-sm btn-primary">Quero conhecer</a>
+      <img src="logo.png" alt="STAFF" class="logo-img" />
+      <div class="nav-links">
+        <a href="#solucao">Solução</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#dashboard">Dashboard</a>
+      </div>
+      <a href="#cta-final" class="btn btn-sm btn-primary">Solicitar demonstração</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <p class="eyebrow">Tecnologia para o campo</p>
-      <h1>Sua lavoura monitorada<br>de forma inteligente</h1>
+      <p class="eyebrow">Monitoramento agrícola inteligente</p>
+      <h1>Agricultura Inteligente<br>Começa com Dados Precisos</h1>
       <p class="subtitle">
-        A STAFF é uma sonda inteligente que monitora umidade do solo, temperatura e condições climáticas —
-        e envia alertas simples por <strong>SMS direto no seu celular</strong>.
+        Transformando dados do campo em decisões estratégicas.
+        A STAFF conecta tecnologia e agricultura para tornar o campo mais produtivo, seguro e inteligente.
       </p>
       <div class="hero-cta">
-        <a href="#como-funciona" class="btn btn-primary">Ver como funciona</a>
-        <a href="#contato" class="btn btn-outline">Quero a STAFF</a>
-      </div>
-      <div class="hero-badges">
-        <span>✔ Sem aplicativo</span>
-        <span>✔ Funciona com qualquer celular</span>
-        <span>✔ Dados em tempo real</span>
+        <a href="#funcionalidades" class="btn btn-outline">Conhecer funcionalidades</a>
+        <a href="#dashboard" class="btn btn-outline">Ver dashboard</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -42,62 +47,188 @@
         <div class="sms-preview">
           <div class="sms-bubble">
             <span class="sms-tag">STAFF Alerta</span>
-            Umidade do solo baixa. Avalie a necessidade de irrigação.
+            Hoje as condições estão ideais para aplicação agrícola.
           </div>
           <div class="sms-bubble">
             <span class="sms-tag">STAFF Alerta</span>
-            Condições favoráveis para aplicação de defensivo agrícola.
+            Umidade do solo baixa. Avalie a necessidade de irrigação.
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- IDENTIDADE DA MARCA -->
+  <section class="identidade">
+    <div class="container">
+      <img src="logo.png" alt="STAFF" class="logo-img-color" />
+      <p class="section-eyebrow">O significado por trás do nome</p>
+      <h2>A STAFF não é apenas um nome</h2>
+      <p class="section-desc">
+        Cada letra representa um dos principais fatores ambientais monitorados pela solução —
+        a base da inteligência que transforma dados em decisões estratégicas.
+      </p>
+      <div class="staff-letters">
+
+        <div class="staff-letter">
+          <div class="letter-badge">S</div>
+          <div class="letter-body">
+            <p class="letter-en">Soil Humidity</p>
+            <h3>Umidade do Solo</h3>
+            <p>Identifica as condições ideais para irrigação e manejo da lavoura, reduzindo desperdícios e otimizando recursos.</p>
+          </div>
+        </div>
+
+        <div class="staff-letter">
+          <div class="letter-badge">T</div>
+          <div class="letter-body">
+            <p class="letter-en">Temperature</p>
+            <h3>Temperatura do Ar</h3>
+            <p>Auxilia no acompanhamento climático e influencia diretamente aplicações agrícolas e o desenvolvimento da plantação.</p>
+          </div>
+        </div>
+
+        <div class="staff-letter">
+          <div class="letter-badge">A</div>
+          <div class="letter-body">
+            <p class="letter-en">Air Humidity</p>
+            <h3>Umidade do Ar</h3>
+            <p>Ajuda na identificação das melhores condições para manejo agrícola e aplicações de defensivos.</p>
+          </div>
+        </div>
+
+        <div class="staff-letter">
+          <div class="letter-badge">F</div>
+          <div class="letter-body">
+            <p class="letter-en">Wind Flow</p>
+            <h3>Direção do Vento</h3>
+            <p>Permite aplicações mais seguras e reduz riscos operacionais durante atividades agrícolas.</p>
+          </div>
+        </div>
+
+        <div class="staff-letter">
+          <div class="letter-badge">F</div>
+          <div class="letter-body">
+            <p class="letter-en">Wind Force</p>
+            <h3>Velocidade do Vento</h3>
+            <p>Fundamental para monitoramento climático e decisões relacionadas à pulverização e segurança no campo.</p>
+          </div>
+        </div>
+
+      </div>
+      <p class="identidade-fechamento">
+        A união desses fatores forma a base da inteligência da STAFF — transformando dados ambientais em decisões estratégicas para o produtor rural.
+      </p>
     </div>
   </section>
 
   <!-- PROBLEMA -->
   <section class="problema">
     <div class="container">
-      <h2>No campo, cada decisão importa</h2>
-      <p>
-        Plantar na hora errada, aplicar defensivos antes da chuva ou irrigar sem necessidade
-        gera desperdícios e prejuízos. A STAFF foi criada para reduzir essas incertezas.
+      <p class="section-eyebrow">Os desafios do campo</p>
+      <h2>Os desafios da agricultura moderna</h2>
+      <p class="section-desc">
+        A produtividade agrícola depende das condições do solo e do ambiente. Porém, muitos produtores ainda tomam
+        decisões sem dados precisos e monitoramento em tempo real.
       </p>
+      <p class="problema-intro">Isso pode causar:</p>
       <div class="problema-cards">
-        <div class="problema-card">
-          <span class="icon">💧</span>
-          <p>Irrigação desnecessária desperdiça água e dinheiro</p>
+        <div class="problema-card"><span class="icon">💧</span><p>Desperdício de água</p></div>
+        <div class="problema-card"><span class="icon">🧴</span><p>Aplicações inadequadas de defensivos</p></div>
+        <div class="problema-card"><span class="icon">📉</span><p>Perdas de produtividade</p></div>
+        <div class="problema-card"><span class="icon">💸</span><p>Gastos desnecessários</p></div>
+        <div class="problema-card"><span class="icon">🌡️</span><p>Falta de controle ambiental</p></div>
+        <div class="problema-card"><span class="icon">⛈️</span><p>Prejuízos causados pelo clima</p></div>
+      </div>
+      <p class="problema-fechamento">
+        Sem acompanhamento contínuo, a propriedade rural fica mais vulnerável a erros operacionais e perdas financeiras.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="solucao" id="solucao">
+    <div class="container">
+      <p class="section-eyebrow">A resposta para esses desafios</p>
+      <h2>Tecnologia aplicada à gestão agrícola</h2>
+      <p class="section-desc">
+        A STAFF foi desenvolvida para transformar dados ambientais em informações práticas e acessíveis para o produtor rural.
+        Através de sensores instalados na propriedade, a solução coleta informações em tempo real sobre solo, clima e ambiente.
+      </p>
+      <div class="solucao-grid">
+        <div class="solucao-recursos">
+          <h3>A plataforma oferece:</h3>
+          <ul class="check-list">
+            <li>Alertas automáticos via SMS</li>
+            <li>Dashboard de monitoramento</li>
+            <li>Gráficos e relatórios</li>
+            <li>Histórico de dados</li>
+            <li>Recomendações inteligentes</li>
+            <li>Monitoramento remoto da propriedade</li>
+          </ul>
         </div>
-        <div class="problema-card">
-          <span class="icon">🌧️</span>
-          <p>Aplicar defensivos antes da chuva joga o produto fora</p>
-        </div>
-        <div class="problema-card">
-          <span class="icon">🌱</span>
-          <p>Plantar fora da hora certa compromete a produtividade</p>
+        <div class="solucao-sms">
+          <p class="sms-label">Exemplo prático de alerta:</p>
+          <div class="sms-card-destaque">
+            <div class="sms-header">
+              <span class="sms-dot"></span><span class="sms-dot"></span><span class="sms-dot"></span>
+            </div>
+            <div class="sms-msg">
+              <span class="sms-sender">STAFF</span>
+              <p>Hoje as condições estão ideais para aplicação agrícola.</p>
+            </div>
+          </div>
+          <p class="solucao-fechamento">
+            Com isso, o produtor consegue agir com mais precisão, reduzir desperdícios e evitar prejuízos operacionais.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DESTAQUE -->
-  <section class="destaque">
+  <!-- FUNCIONALIDADES -->
+  <section class="funcionalidades" id="funcionalidades">
     <div class="container">
-      <h2>STAFF: informação do campo direto no seu celular</h2>
-      <p>Monitore sua lavoura, receba alertas e tome decisões com mais segurança, mesmo à distância.</p>
-      <div class="pillars">
-        <div class="pillar">
-          <span class="pillar-icon">📊</span>
-          <strong>Mais controle</strong>
+      <p class="section-eyebrow">O que a STAFF faz</p>
+      <h2>Monitoramento completo da propriedade</h2>
+      <div class="func-grid">
+
+        <div class="func-card">
+          <div class="func-icon">🔌</div>
+          <h3>Sensores integrados</h3>
+          <ul>
+            <li>Umidade do solo</li>
+            <li>Umidade do ar</li>
+            <li>Temperatura ambiente</li>
+            <li>Direção do vento</li>
+            <li>Velocidade do vento</li>
+          </ul>
         </div>
-        <div class="pillar-divider">→</div>
-        <div class="pillar">
-          <span class="pillar-icon">♻️</span>
-          <strong>Menos desperdício</strong>
+
+        <div class="func-card">
+          <div class="func-icon">⚙️</div>
+          <h3>Recursos inteligentes</h3>
+          <ul>
+            <li>Alertas automáticos</li>
+            <li>Dashboard em tempo real</li>
+            <li>Relatórios de análise</li>
+            <li>Histórico de medições</li>
+            <li>Acompanhamento remoto</li>
+          </ul>
         </div>
-        <div class="pillar-divider">→</div>
-        <div class="pillar">
-          <span class="pillar-icon">🚀</span>
-          <strong>Mais produtividade</strong>
+
+        <div class="func-card">
+          <div class="func-icon">🌾</div>
+          <h3>Gestão agrícola</h3>
+          <ul>
+            <li>Controle de irrigação</li>
+            <li>Planejamento agrícola</li>
+            <li>Aplicação de defensivos</li>
+            <li>Redução de desperdícios</li>
+            <li>Manejo eficiente da lavoura</li>
+          </ul>
         </div>
+
       </div>
     </div>
   </section>
@@ -105,87 +236,218 @@
   <!-- COMO FUNCIONA -->
   <section class="como-funciona" id="como-funciona">
     <div class="container">
-      <p class="section-eyebrow">Simples de usar</p>
+      <p class="section-eyebrow">Simples, inteligente e eficiente</p>
       <h2>Como funciona a STAFF</h2>
-      <div class="steps">
+      <div class="flow">
 
-        <div class="step">
-          <div class="step-number">1</div>
-          <div class="step-body">
-            <h3>Instale a STAFF na lavoura</h3>
-            <p>A sonda é posicionada em um ponto estratégico da propriedade para acompanhar as condições do solo e do clima.</p>
-          </div>
+        <div class="flow-step">
+          <div class="flow-icon">📍</div>
+          <p>Sonda instalada na propriedade</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+          <div class="flow-icon">📊</div>
+          <p>Coleta de dados ambientais</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+          <div class="flow-icon">📡</div>
+          <p>Envio das informações para a plataforma</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+          <div class="flow-icon">🧠</div>
+          <p>Análise inteligente em tempo real</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+          <div class="flow-icon">🔔</div>
+          <p>Geração de alertas e recomendações</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step">
+          <div class="flow-icon">📱</div>
+          <p>Visualização no dashboard e aplicativo</p>
+        </div>
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-step flow-step-final">
+          <div class="flow-icon">✅</div>
+          <p>Tomadas de decisão mais precisas</p>
         </div>
 
-        <div class="step">
-          <div class="step-number">2</div>
-          <div class="step-body">
-            <h3>Monitore os dados do campo</h3>
-            <p>A STAFF mede umidade, temperatura e condições ambientais em tempo real.</p>
-          </div>
+      </div>
+      <p class="como-funciona-desc">
+        Os sensores monitoram continuamente as condições da propriedade e enviam informações para a plataforma da STAFF,
+        que processa os dados e gera análises acessíveis e práticas para o produtor rural.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios" id="beneficios">
+    <div class="container">
+      <p class="section-eyebrow">O que você ganha</p>
+      <h2>Mais produtividade e menos desperdício</h2>
+      <p class="section-desc">
+        A STAFF ajuda produtores rurais a administrarem suas propriedades com mais controle, eficiência e segurança.
+      </p>
+      <div class="beneficios-grid">
+
+        <div class="beneficio-card">
+          <div class="beneficio-icon">💰</div>
+          <h3>Financeiros</h3>
+          <ul>
+            <li>Economia de água</li>
+            <li>Redução de desperdícios</li>
+            <li>Menor custo operacional</li>
+            <li>Diminuição de perdas agrícolas</li>
+            <li>Melhor aproveitamento de recursos</li>
+          </ul>
         </div>
 
-        <div class="step">
-          <div class="step-number">3</div>
-          <div class="step-body">
-            <h3>Receba alertas por SMS</h3>
-            <p>Mensagens simples chegam direto no seu celular com orientações úteis para o manejo da lavoura.</p>
-          </div>
+        <div class="beneficio-card beneficio-card-destaque">
+          <div class="beneficio-icon">⚡</div>
+          <h3>Operacionais</h3>
+          <ul>
+            <li>Monitoramento remoto</li>
+            <li>Decisões mais rápidas</li>
+            <li>Gestão organizada</li>
+            <li>Controle climático contínuo</li>
+            <li>Acompanhamento em tempo real</li>
+          </ul>
         </div>
 
-        <div class="step">
-          <div class="step-number">4</div>
-          <div class="step-body">
-            <h3>Tome decisões melhores</h3>
-            <p>Com dados reais da propriedade, você escolhe o momento certo para plantar, irrigar ou aplicar defensivos.</p>
-          </div>
+        <div class="beneficio-card">
+          <div class="beneficio-icon">🎯</div>
+          <h3>Estratégicos</h3>
+          <ul>
+            <li>Agricultura baseada em dados</li>
+            <li>Gestão profissional da propriedade</li>
+            <li>Maior previsibilidade operacional</li>
+            <li>Modernização da produção rural</li>
+          </ul>
         </div>
 
+      </div>
+      <div class="beneficios-quote">
+        <p>"Chega de tratar sua fazenda apenas como produção.<br>Está na hora de administrá-la como empresa."</p>
       </div>
     </div>
   </section>
 
-  <!-- SMS EXEMPLOS -->
-  <section class="sms-section">
+  <!-- DASHBOARD -->
+  <section class="dashboard" id="dashboard">
     <div class="container">
-      <p class="section-eyebrow">Exemplos reais</p>
-      <h2>Os alertas chegam assim no seu celular</h2>
-      <div class="sms-grid">
-
-        <div class="sms-card">
-          <div class="sms-header">
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
+      <p class="section-eyebrow">Visão centralizada</p>
+      <h2>Gestão agrícola em tempo real</h2>
+      <p class="section-desc">
+        O dashboard da STAFF foi desenvolvido para oferecer uma experiência prática, moderna e intuitiva
+        no acompanhamento da propriedade rural — centralizando todos os dados em um único ambiente de gestão.
+      </p>
+      <div class="dashboard-grid">
+        <div class="dashboard-painel">
+          <div class="dash-topbar">
+            <span class="dash-dot red"></span>
+            <span class="dash-dot yellow"></span>
+            <span class="dash-dot green"></span>
+            <span class="dash-title">STAFF Dashboard</span>
           </div>
-          <div class="sms-msg">
-            <span class="sms-sender">STAFF</span>
-            <p><strong>Alerta:</strong> umidade do solo baixa. Avalie a necessidade de irrigação.</p>
+          <div class="dash-body">
+            <div class="dash-widgets">
+              <div class="dash-widget">
+                <span class="widget-label">Umidade Solo</span>
+                <span class="widget-value">62%</span>
+                <div class="widget-bar"><div class="widget-fill" style="width:62%"></div></div>
+              </div>
+              <div class="dash-widget">
+                <span class="widget-label">Umidade Ar</span>
+                <span class="widget-value">78%</span>
+                <div class="widget-bar"><div class="widget-fill" style="width:78%"></div></div>
+              </div>
+              <div class="dash-widget">
+                <span class="widget-label">Temperatura</span>
+                <span class="widget-value">24°C</span>
+                <div class="widget-bar"><div class="widget-fill temp" style="width:55%"></div></div>
+              </div>
+              <div class="dash-widget">
+                <span class="widget-label">Vento</span>
+                <span class="widget-value">12 km/h</span>
+                <div class="widget-bar"><div class="widget-fill wind" style="width:30%"></div></div>
+              </div>
+            </div>
+            <div class="dash-alert">
+              <span class="alert-dot"></span>
+              Condições ideais para aplicação agrícola detectadas
+            </div>
           </div>
         </div>
-
-        <div class="sms-card">
-          <div class="sms-header">
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
-          </div>
-          <div class="sms-msg">
-            <span class="sms-sender">STAFF</span>
-            <p><strong>Alerta:</strong> condições favoráveis para aplicação de defensivo agrícola.</p>
+        <div class="dashboard-recursos">
+          <h3>O painel oferece:</h3>
+          <ul class="check-list">
+            <li>Indicadores ambientais em tempo real</li>
+            <li>Gráficos e histórico de medições</li>
+            <li>Alertas automáticos</li>
+            <li>Relatórios inteligentes</li>
+            <li>Visualização simplificada</li>
+          </ul>
+          <h3 style="margin-top: 24px;">Acesse de qualquer lugar:</h3>
+          <div class="acesso-icons">
+            <div class="acesso-item"><span>📱</span><p>Aplicativo</p></div>
+            <div class="acesso-item"><span>💻</span><p>Painel web</p></div>
+            <div class="acesso-item"><span>📩</span><p>SMS</p></div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="sms-card">
-          <div class="sms-header">
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
-            <span class="sms-dot"></span>
-          </div>
-          <div class="sms-msg">
-            <span class="sms-sender">STAFF</span>
-            <p><strong>Alerta:</strong> possibilidade de chuva. Evite aplicação de produtos neste momento.</p>
-          </div>
+  <!-- DADOS TÉCNICOS -->
+  <section class="dados-tecnicos">
+    <div class="container">
+      <p class="section-eyebrow">Tecnologia do campo</p>
+      <h2>Tecnologia desenvolvida para o campo</h2>
+      <div class="tec-grid">
+
+        <div class="tec-card">
+          <h3>🔬 Sensores utilizados</h3>
+          <ul>
+            <li>Sensor de umidade do solo</li>
+            <li>Sensor de umidade do ar</li>
+            <li>Sensor de temperatura</li>
+            <li>Sensor de direção do vento</li>
+            <li>Sensor de velocidade do vento</li>
+          </ul>
+        </div>
+
+        <div class="tec-card">
+          <h3>💡 Recursos tecnológicos</h3>
+          <ul>
+            <li>Monitoramento em tempo real</li>
+            <li>Sistema de alertas inteligentes</li>
+            <li>Dashboard online</li>
+            <li>Aplicativo de gestão</li>
+            <li>Histórico de dados</li>
+            <li>Relatórios e gráficos</li>
+            <li>Acompanhamento remoto</li>
+          </ul>
+        </div>
+
+        <div class="tec-card">
+          <h3>🌍 Aplicações</h3>
+          <ul>
+            <li>Fazendas</li>
+            <li>Sítios</li>
+            <li>Estufas</li>
+            <li>Plantações</li>
+            <li>Agricultura de precisão</li>
+            <li>Projetos de monitoramento rural</li>
+          </ul>
         </div>
 
       </div>
@@ -193,21 +455,32 @@
   </section>
 
   <!-- CTA FINAL -->
-  <section class="cta-final" id="contato">
+  <section class="cta-final" id="cta-final">
     <div class="container">
-      <h2>STAFF — A tecnologia que acompanha<br>sua lavoura de perto</h2>
-      <p>Dados do campo, decisões inteligentes. Sem complicação.</p>
-      <a href="#" class="btn btn-primary btn-lg">Quero monitorar minha lavoura</a>
+      <p class="section-eyebrow cta-eyebrow">Dê o próximo passo</p>
+      <h2>O futuro da agricultura começa com decisões inteligentes</h2>
+      <p>
+        A STAFF foi criada para aproximar tecnologia e agricultura, oferecendo ferramentas que auxiliam produtores
+        rurais a reduzirem perdas, aumentarem produtividade e administrarem suas propriedades com mais eficiência.
+      </p>
+      <div class="cta-taglines">
+        <span>Transforme dados em resultados.</span>
+        <span>Transforme sua propriedade com a STAFF.</span>
+      </div>
+      <a href="#" class="btn btn-primary btn-lg">Solicitar demonstração</a>
+      <a href="#" class="btn btn-outline-dark btn-lg">Voltar ao início ↑</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <span class="logo">STAFF</span>
+      <img src="logo.png" alt="STAFF" class="logo-img logo-img-footer" />
       <p>© 2025 STAFF — Monitoramento inteligente para o campo.</p>
     </div>
   </footer>
 
+  <script src="three.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
