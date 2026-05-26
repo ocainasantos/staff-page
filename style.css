@@ -216,6 +216,7 @@ nav {
   flex-shrink: 0;
   object-fit: contain;
   filter: brightness(0) invert(1);
+  cursor: pointer;
 }
 
 .logo-img-footer {
@@ -1075,7 +1076,7 @@ footer p { font-size: .8rem; }
   .nav-links a:last-child { border-bottom: none; }
 
   .nav-inner { padding: 10px 16px; }
-  .logo-img  { height: 42px; }
+  .logo-img  { height: 42px; cursor: pointer;}
 
   .hero {
     flex-direction: column;

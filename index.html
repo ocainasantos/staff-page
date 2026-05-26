@@ -9,16 +9,13 @@
 </head>
 <body>
 
-  <!-- SONDA 3D FLUTUANTE -->
-  <canvas id="probe-canvas"></canvas>
-
   <!-- BOTÃO VOLTAR AO TOPO -->
   <button id="back-to-top" aria-label="Voltar ao topo">↑</button>
 
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <img src="logo.png" alt="STAFF" class="logo-img" />
+      <img src="logo.png" alt="STAFF" class="logo-img" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" />
       <div class="nav-links" id="nav-links">
         <a href="#solucao">Solução</a>
         <a href="#funcionalidades">Funcionalidades</a>
@@ -27,7 +24,6 @@
         <a href="#dashboard">Dashboard</a>
       </div>
       <div class="nav-right">
-        <a href="#cta-final" class="btn btn-sm btn-primary">Solicitar demonstração</a>
         <button class="hamburger" id="hamburger" aria-label="Abrir menu">
           <span></span><span></span><span></span>
         </button>
@@ -148,7 +144,7 @@
         <div class="problema-card"><span class="icon">💸</span><p>Gastos desnecessários</p></div>
         <div class="problema-card"><span class="icon">🌡️</span><p>Falta de controle ambiental</p></div>
         <div class="problema-card"><span class="icon">⛈️</span><p>Prejuízos causados pelo clima</p></div>
-      </div>
+      </div> 
       <p class="problema-fechamento">
         Sem acompanhamento contínuo, a propriedade rural fica mais vulnerável a erros operacionais e perdas financeiras.
       </p>
